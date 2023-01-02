@@ -5,8 +5,8 @@ const otpSchema = new schema({
 otp:{
     type: String
 },
-mobile:{
-    type:String
+phone:{
+    type:Number
 }
 },{timestamps:true})
 

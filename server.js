@@ -5,8 +5,9 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose')
 const userRoutes = require('./routes/userRoutes')
-const config = require('config')
-const port = config.get('PORT')
+// const config = require('config')
+// const port = config.get('PORT')
+const PORT=5000;
 const formData = require('express-form-data');
 app.use(formData.parse());
 
@@ -34,5 +35,5 @@ app.use('/api/auth', userRoutes);
 app.use('/uploads', express.static('uploads'))
 
 
-const Port = config.get('PORT')
+const Port = 5000;
 app.listen(Port, console.log (`server is running in development mode on port ${Port}`))
