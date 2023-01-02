@@ -3,7 +3,7 @@ const otpModel = require("../models/otpModel");
 const getOtp = async function (req, res) {
   const { phone } = req.body;
   var OTP = Math.floor(1000 + Math.random() * 9000);
-  const user = await otp.create({ phone: phone, otp:OTP });
+  const user = await otpModel.create({ phone: phone, otp:OTP });
   res.status(200).json({ status: true, body: user });
 };
 
