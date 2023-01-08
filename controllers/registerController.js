@@ -16,7 +16,7 @@ const getOtp = async function (req, res) {
 // .then(res => res.json())
 // .then(async json => 
 //   {
-//     const user = await otpModel.create({ phone: phone, otp:OTP });
+    const user = await otpModel.create({ phone: phone, otp:OTP });
 //     console.log(json)
 //     res.status(200).json({ status: json.success});
 //  });
