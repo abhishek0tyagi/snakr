@@ -6,7 +6,7 @@ otp:{
     type: String
 },
 phone:{
-    type:Number
+    type:String
 }
 },{timestamps:true})
 
